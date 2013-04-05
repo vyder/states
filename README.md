@@ -1,4 +1,4 @@
-http://vyder.github.com/states
+http://vyder.github.io/states
 
 Page to keep track of the states I've been to so far.
 
