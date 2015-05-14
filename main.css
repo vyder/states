@@ -1,0 +1,50 @@
+body{
+    width:340px;
+    margin:0 auto;
+    font-family:"helvetica neue",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding:0 0 40px;
+
+}
+
+h1{
+    font-size:24px;
+    font-weight:bold;
+    margin:24px 0 6px;
+    color:#9d9d9d;
+}
+
+ul.stately{
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:10px;
+    border-top:1px solid #dddddd;
+}
+
+#states{
+    color:white;
+}
+
+#states .passed-through {
+    color: #B6E1F3;
+}
+
+#states .visited,
+#states .passed-through.visited {
+    color: #00AEEF;
+}
+
+
+div.count {
+    position: relative;
+}
+div.count h1 { color: #00AEEF; }
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clear {
+    clear: both;
+}

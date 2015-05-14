@@ -3,82 +3,11 @@
   <meta charset="utf-8">
   <title>US States I've Been To</title>
   <link rel="stylesheet" href="stately/stately.css?v=1.0">
-  <style>
-
-	body{
-		width:340px;
-		margin:0 auto;
-		font-family:"helvetica neue",arial,sans-serif;
-		-webkit-font-smoothing: antialiased;
-		padding:0 0 40px;
-
-	}
-
-	h1{
-		font-size:24px;
-		font-weight:bold;
-		margin:24px 0 6px;
-		color:#9d9d9d;
-	}
-
-	ul.stately{
-		background:#f2f2f2;
-		padding:20px;
-		border-radius:10px;
-		border-top:1px solid #dddddd;
-	}
-
-	#visited{
-		color:white;
-	}
-
-	#visited li#az,
-	#visited li#ca,
-	#visited li#fl,
-	#visited li#il,
-	#visited li#ma,
-	#visited li#me,
-	#visited li#nv,
-	#visited li#nj,
-	#visited li#ny,
-	#visited li#or,
-	#visited li#pa,
-	#visited li#va,
-	#visited li#wa
-	{
-		color: #00AEEF;
-	}
-
-	/* Passing through */
-	#visited li#ga,
-	#visited li#mi,
-	#visited li#mn,
-	#visited li#nh,
-	#visited li#tx
-	{
-		color: #B6E1F3;
-	}
-
-	div.count {
-		position: relative;
-	}
-	div.count h1 { color: #00AEEF; }
-	.pull-left {
-		float: left;
-	}
-	.pull-right {
-		float: right;
-	}
-	.clear {
-		clear: both;
-	}
-
-
-  </style>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<h1>US States I've Been To</h1>
-	<ul class="stately" id="visited">
+	<ul class="stately" id="states">
 		<li data-state="al" id="al">A</li>
 		<li data-state="ak" id="ak">B</li>
 		<li data-state="ar" id="ar">C</li>
@@ -132,55 +61,11 @@
 		<li data-state="wy" id="wy">y</li>
 	</ul>
 	<div class="count">
-		<h1 class="pull-left"><small><em>June 17th 2014</em></small></h1>
-		<h1 class="pull-right">13/50</h1>
+		<h1 class="pull-left"><small><em>May 14th 2015</em></small></h1>
+		<h1 class="pull-right"><span id="total">0</span>/50</h1>
 	</div>
 	<div class="clear"></div>
 
-	<style>
-		/* Not Visited Yet */
-		#visited li#al,
-		#visited li#ak,
-		#visited li#ar,
-		#visited li#co,
-		#visited li#ct,
-		#visited li#de,
-		#visited li#dc,
-		#visited li#ga,
-		#visited li#hi,
-		#visited li#id,
-		#visited li#in,
-		#visited li#ia,
-		#visited li#ks,
-		#visited li#ky,
-		#visited li#la,
-		#visited li#me,
-		#visited li#md,
-		#visited li#mi,
-		#visited li#mn,
-		#visited li#ms,
-		#visited li#mo,
-		#visited li#mt,
-		#visited li#ne,
-		#visited li#nh,
-		#visited li#nm,
-		#visited li#nc,
-		#visited li#nd,
-		#visited li#oh,
-		#visited li#ok,
-		#visited li#or,
-		#visited li#ri,
-		#visited li#sc,
-		#visited li#sd,
-		#visited li#tn,
-		#visited li#tx,
-		#visited li#ut,
-		#visited li#va,
-		#visited li#vt,
-		#visited li#wv,
-		#visited li#wi,
-		#visited li#wy
-		{}
-	</style>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
