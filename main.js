@@ -19,10 +19,10 @@
     var all_visits = {
         'visited': {
             states: [
-                "az", "ca", "dc", "fl", "id",
-                "il", "ma", "md", "me", "nv",
-                "nj", "ny", "or", "pa", "va",
-                "wa"
+                "az", "ca", "co", "dc", "fl",
+                "id", "il", "ma", "md", "me",
+                "nv", "nj", "ny", "or", "pa",
+                "va", "wa"
             ]
         },
         'passed-through': {
