@@ -61,6 +61,7 @@
         ['Andaman and Nicobar Islands'],
         ['Maharashtra'],
         ['Madhya Pradesh'],
+        ['Andhra Pradesh'],
         ['Goa'],
         ['Uttar Pradesh'],
         ['Rajasthan'],
