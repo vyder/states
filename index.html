@@ -1,11 +1,24 @@
 <!doctype html>
 <head>
   <meta charset="utf-8">
-  <title>US States I've Been To</title>
+  <title>States I've Been To</title>
   <link rel="stylesheet" href="stately/stately.css?v=1.0">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="narrow centered">
+	<h1>Indian States I've Been To</h1>
+	</div>
+	<div id="regions" style="width: 800px; height: 494px;"></div>
+	<div class="narrow centered">
+	<div class="count green">
+		<h1 class="pull-left"><small><em>Dec 10th, 2017</em></small></h1>
+		<h1 class="pull-right"><span id="total_IN">0</span>/50</h1>
+	</div>
+	<div class="clear"></div>
+	</div>
+
+	<div class="narrow centered">
 	<h1>US States I've Been To</h1>
 	<ul class="stately" id="states">
 		<li data-state="al" id="al">A</li>
@@ -61,11 +74,13 @@
 		<li data-state="wy" id="wy">y</li>
 	</ul>
 	<div class="count">
-		<h1 class="pull-left"><small><em>May 14th 2015</em></small></h1>
-		<h1 class="pull-right"><span id="total">0</span>/50</h1>
+		<h1 class="pull-left"><small><em>May 14th, 2015</em></small></h1>
+		<h1 class="pull-right"><span id="total_US">0</span>/50</h1>
 	</div>
 	<div class="clear"></div>
+	</div>
 
+	<script type="text/javascript" src="charts/loader.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

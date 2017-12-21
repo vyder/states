@@ -1,10 +1,15 @@
 body{
-    width:340px;
-    margin:0 auto;
     font-family:"helvetica neue",arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     padding:0 0 40px;
+}
 
+.narrow {
+    width:340px;
+}
+
+.centered {
+    margin:0 auto;
 }
 
 h1{
@@ -39,6 +44,7 @@ div.count {
     position: relative;
 }
 div.count h1 { color: #00AEEF; }
+div.count.green h1 { color: #267113; }
 .pull-left {
     float: left;
 }
@@ -47,4 +53,8 @@ div.count h1 { color: #00AEEF; }
 }
 .clear {
     clear: both;
+}
+
+#regions {
+    margin: 0 auto;
 }

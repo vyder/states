@@ -39,6 +39,45 @@
         });
     }
 
-    document.getElementById('total').textContent = all_visits['visited'].states.length;
+    document.getElementById('total_US').textContent = all_visits['visited'].states.length;
 
+    google.charts.load('current', {
+      'packages':['geochart'],
+      // Note: you will need to get a mapsApiKey for your project.
+      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+    });
+    google.charts.setOnLoadCallback(drawRegionsMap);
+
+    function drawRegionsMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['States'],
+        ['Delhi'],
+        ['Tamil Nadu'],
+        ['Kerala'],
+        ['Karnataka'],
+        ['Pondicherry'],
+        ['Telangana'],
+        ['Andaman and Nicobar Islands'],
+        ['Maharashtra'],
+        ['Madhya Pradesh'],
+        ['Goa'],
+        ['Uttar Pradesh'],
+        ['Rajasthan'],
+        ['Gujarat'],
+        ['Punjab']
+      ]);
+
+      document.getElementById('total_IN').textContent = data.og.length;
+
+      var options = {
+        region: 'IN',
+        domain: 'IN',
+        resolution: 'provinces'
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('regions'));
+
+      chart.draw(data, options);
+    };
 })();
